@@ -211,6 +211,10 @@ func readableColors256() *Palette {
 
 func init() {
 	Themes = []Theme{
+                {
+                      id:    "mono",
+                       useID: true,
+                },
 		{
 			id:        "colors",
 			names:     readableColors256(),
