@@ -211,10 +211,10 @@ func readableColors256() *Palette {
 
 func init() {
 	Themes = []Theme{
-                {
-                      id:    "mono",
-                       useID: true,
-                },
+		{
+			id:    "mono",
+			useID: true,
+		},
 		{
 			id:        "colors",
 			names:     readableColors256(),
@@ -235,10 +235,6 @@ func init() {
 			sys:       Color256(22),                               // Another green
 			pm:        Color256(28),                               // More green, slightly lighter
 			highlight: style(Bold + "\033[48;5;22m\033[38;5;46m"), // Green on dark green
-		},
-		{
-			id:    "mono",
-			useID: true,
 		},
 	}
 
